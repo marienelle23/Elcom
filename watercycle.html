@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - 8 Ecclesiastes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0000ff, #00ff00, #ffff00); /* Blue to green to yellow gradient */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 2s;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #00ff99;
+            text-decoration: none;
+            font-size: 1.2em;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav ul li a::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: #00ff99;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+        nav ul li a.watercycle {
+            color: #00c6ff; /* Light blue color for the Water Cycle link */
+            text-shadow: 0 0 5px #00c6ff, 0 0 10px #00c6ff;
+        }
+        nav ul li a.watercycle:hover {
+            color: #00aaff;
+            transform: scale(1.2);
+            animation: bounce 0.5s ease-out;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        h2 {
+            color: #0072ff;
+            text-shadow: 0 0 5px #0072ff, 0 0 10px #0072ff;
+            animation: neon 1.5s ease-in-out infinite alternate, fadeIn 2s;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+        p, ul {
+            line-height: 1.6;
+            font-size: 1.1em;
+            animation: fadeIn 2s;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #0072ff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+            margin: 20px auto;
+            display: block;
+            animation: zoomIn 2s;
+        }
+        footer {
+            background: #333;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer a {
+            color: #00ff99;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ff99cc;
+        }
+        #backToTopBtn {
+            display: block;
+            background: #00c6ff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        #backToTopBtn.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #backToTopBtn:hover {
+            background: #0072ff;
+        }
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes bounce {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99;
+            }
+            100% {
+                text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elcom</h1>
+        <p>A website where you can learn about the elements and compounds found in our body.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home Page</a></li>
+            <li><a href="essential.html">Essential Elements and Compounds</a></li>
+            <li><a href="watercycle.html" class="watercycle">Water Cycle</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="reference.html">References</a></li>
+            <li><a href="feedback.html">Feedback Page</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Water Cycle</h2>
+        <p>How does water behave in its different states?</p>
+        <p>Water can exist in three states: solid, liquid, and gas. The three types of phase changes for water are:</p>
+        <ul>
+            <li><strong>Evaporation:</strong> When water is in a liquid state, it can evaporate into a gas or freeze into a solid.</li>
+            <li><strong>Melting:</strong> If water is in a frozen state, then adding heat will melt it and turn it into a liquid again.</li>
+            <li><strong>Condensation:</strong> When water vapor in the air condenses, it turns back into a liquid, such as in the form of rain.</li>
+        </ul>
+        <p>All changes of state involve the transfer of energy. The water particles in each state behave as energy is absorbed or released.</p>
+        <img src="https://www.snexplores.org/wp-content/uploads/2022/10/GettyImages-1356607933-1536x1473.jpg" alt="Water Cycle" height="400" width="400">
+        <p>Thank you for visiting our website! We appreciate your interest and hope you found what you were looking for. If you have any questions or need further assistance, please don't hesitate to reach out. Have a great day!</p>
+    </div>
+
+    <footer>
+        <p><a href="#backToTopBtn" id="backToTopBtn">Back to the Top</a></p>
+    </footer>
+
+    <script>
+        // Back to top button functionality
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+

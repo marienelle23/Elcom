@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - 8 Ecclesiastes</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes marqueeGlow {
+            0% {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+            }
+            50% {
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00;
+            }
+            100% {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+            }
+        }
+
+        body {
+            background: linear-gradient(to bottom, #0000ff, #00ff00, #ffff00); /* Blue to Green to Yellow gradient */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark gray for better readability */
+            animation: fadeIn 2s ease-in; /* Fade-in animation */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #00bfff, #1e90ff); /* Sky blue gradient */
+            color: #000000; /* Black text color for header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            animation: slideIn 1.5s ease-out; /* Slide-in animation */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: linear-gradient(to right, #00bfff, #1e90ff); /* Sky blue gradient */
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        nav a {
+            color: #ffffff; /* White text color for links */
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s, transform 0.3s; /* Smooth transition */
+            animation: fadeIn 2s ease-in; /* Fade-in animation */
+        }
+
+        nav a:hover {
+            color: #00ff00; /* Neon green on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .reference-section {
+            background-color: #1e1e1e; /* Dark background for reference sections */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: #00ff00; /* Neon green text color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            animation: fadeIn 2s ease-in; /* Fade-in animation */
+        }
+
+        .reference-section h3 {
+            border-bottom: 2px solid #00ff00; /* Underline with neon green */
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #00bfff, #1e90ff); /* Sky blue gradient */
+            color: #ffffff; /* White text color for footer */
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+
+        footer marquee {
+            font-size: 1.5em; /* Larger font size for emphasis */
+            color: #00ff00; /* Neon green text color */
+            background-color: #000000; /* Black background for contrast */
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #00ff00; /* Neon green border */
+            display: inline-block; /* Ensure it only takes up as much width as necessary */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            margin: 0 auto; /* Center the marquee */
+            animation: marqueeGlow 3s infinite; /* Glowing text animation */
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullets from list */
+            padding: 0;
+        }
+
+        ul a {
+            color: #00ff00; /* Neon green text color for links in the list */
+            text-decoration: none;
+            display: block; /* Ensure each link takes full width */
+            padding: 10px;
+            border-bottom: 1px solid #00ff00; /* Separator between links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        ul a:hover {
+            background-color: #00ff00; /* Neon green background on hover */
+            color: #000000; /* Black text color on hover */
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00ff00; /* Neon green background color */
+            color: #000000; /* Black text color */
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #000000; /* Black border */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+            animation: fadeIn 2s ease-in; /* Fade-in animation */
+        }
+
+        .back-to-top:hover {
+            background-color: #00cc00; /* Darker green background on hover */
+            border-color: #00cc00; /* Matching border color on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>References</h1>
+    </header>
+
+    <nav>
+        <a href="homepage-1.html">Home Page</a>
+        <a href="essential-1.html">Essential Elements and Compounds</a>
+        <a href="watercycle.html">Water Cycle</a>
+        <a href="quiz.html">Quizzes</a>
+        <a href="reference-2.html">References</a>
+        <a href="feedback.html">Feedback Page</a>
+    </nav>
+
+    <div class="container">
+        <div class="reference-section">
+            <h3>Books and Articles</h3>
+            <ul>
+                <li>"Understanding the Human Body" by John Smith</li>
+                <li>"Chemistry of Life" by Jane Doe</li>
+                <li>National Geographic, "The Water Cycle"</li>
+            </ul>
+        </div>
+
+        <div class="reference-section">
+            <h3>Websites</h3>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Water">Visit Water - Wikipedia</a></li>
+                <li><a href="https://en.m.wikipedia.org/wiki/Iron">Visit Iron - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Calcium">Visit Calcium - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Carbon_dioxide">Visit Carbon Dioxide - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Zinc#cite_note-Hambridge2007-14">Visit Zinc - Wikipedia</a></li>
+                <li><a href="https://www.healthdirect.gov.au">Visit Trusted Health Advice</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Sodium_chloride">Visit Sodium Chloride - Wikipedia</a></li>
+                <li><a href="https://www.chemicalsafetyfacts.org/chemicals/sodium-chloride/#:~:text=It%20is%20used%20as%20a,safe%22%20(GRAS)%20ingredient">Visit Sodium Chloride - Chemical Safety Facts</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Potassium">Visit Potassium - Wikipedia</a></li>
+                <li><a href="https://medlineplus.gov/potassium.html#:~:text=Potassium%20is%20a%20mineral%20that,waste%20products%20out%20of%20cells">Visit Potassium - MedlinePlus</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cholesterol">Visit Cholesterol - Wikipedia</a></li>
+                <li><a href="https://medlineplus.gov/cholesterol.html#:~:text=What%20is%20cholesterol%3F,all%20the%20cholesterol%20it%20needs">Visit Cholesterol - MedlinePlus</a></li>
+                <li><a href="https://www.webmd.com/vitamins-and-supplements/what-is-phosphorus">Visit Phosphorus</a></li>
+                <li><a href="https://thechemco.com/chemical/citric-acid/?_vsrefdom=adwords&msclkid=ddbea8dda6af11715504ce6502d8f123&utm_source=bing&utm_medium=cpc&utm_campaign=**LP%20DSA%20-%20All%20Pages&utm_term=thechemco&utm_content=All%20Pages">Visit Citric Acid - The Chemco</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Citric_acid">Visit Citric Acid - Wikipedia</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <marquee>For Educational Purposes Only.</marquee>
+        <p><a href="#Top" class="back-to-top">Back to the Top</a></p>
+    </footer>
+</body>
+
+</html>

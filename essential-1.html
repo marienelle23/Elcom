@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - 8 Ecclesiastes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #00c6ff, #00ff99, #ffcc00);
+            color: #000; /* Text color black */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(to right, #00509e, #003d72); /* Darker gradient */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #009688; /* Darker teal */
+            animation: fadeIn 2s;
+        }
+
+        nav {
+            background: #111;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #009688; /* Darker teal */
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: #009688; /* Darker teal */
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            animation: fadeIn 2s;
+        }
+
+        h2, h3 {
+            color: #009688; /* Darker teal */
+            text-shadow: 0 0 5px #00796b; /* Even darker teal */
+            animation: slideIn 1s;
+        }
+
+        p, ul {
+            color: #000; /* Text color black */
+            animation: fadeIn 2s;
+        }
+
+        .example {
+            font-style: italic;
+            font-weight: bold;
+            color: #ff66b2; /* Darker pink */
+            animation: pulse 2s infinite;
+        }
+
+        .fadeIn {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .slideIn {
+            transform: translateX(-100%);
+            animation: slideIn 1s forwards;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background: #111;
+            color: #000; /* Text color black */
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a {
+            color: #009688; /* Darker teal */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff66b2; /* Darker pink */
+        }
+
+        #backToTopBtn {
+            display: block;
+            background: #00509e; /* Darker blue */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #backToTopBtn.show {
+            opacity: 1;
+        }
+
+        #backToTopBtn:hover {
+            background: #003d72; /* Darker blue */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Essential Elements and Compounds</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage-1.html">Home Page</a></li>
+            <li><a href="essential-1.html">Essential Elements and Compounds</a></li>
+            <li><a href="watercycle.html">Water Cycle</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="reference-2.html">References</a></li>
+            <li><a href="feedback.html">Feedback Page</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="slideIn">Phosphorus</h2>
+        <p class="fadeIn">Phosphorus is a mineral, like iron or potassium. Fun fact: you have more of it in your body than any other mineral, except calcium.</p>
+        <p class="fadeIn">In supplement form, it is called a Phosphate.</p>
+        <p class="fadeIn">Phosphorus is part of our diets and makes us healthy. Its main task is to keep our teeth and bones healthy, but Calcium needs Phosphorus to do so. It also helps muscles and nerves work and turns fats, carbs, and proteins into energy.</p>
+        <p class="fadeIn">Almost everything you eat contains Phosphorus. Certain fish, like Salmon, are high in Phosphorus.</p>
+        <p class="fadeIn pulse">FUN FACT: A person who’s 19 years and older must have 700 milligrams of Phosphorus, while young students need an average of 1,250 milligrams.</p>
+        <p class="fadeIn">Other benefits of Phosphorus include:</p>
+        <ul class="fadeIn">
+            <li>Helps get rid of waste in your kidney</li>
+            <li>Lessens muscle pain after exercise</li>
+            <li>Signals certain nerves in your body</li>
+        </ul>
+        <p class="fadeIn">Foods high in Phosphorus:</p>
+        <ul class="fadeIn">
+            <li>Meat and other proteins like poultry, fish, and liver</li>
+            <li>Milk and dairy products like eggs, ice cream, and cottage cheese</li>
+            <li>Dried fruits</li>
+            <li>Garlic cloves</li>
+            <li>Soy products, including soy milk</li>
+        </ul>
+        <p class="example">Example of Phosphorus: phosphorus</p>
+
+        <h2 class="slideIn">Potassium</h2>
+        <p class="fadeIn">Potassium was first isolated in 1807 by British chemist Humphry Davy using electrolysis. It’s an alkali metal similar to sodium, with a silvery-white appearance and a single valence electron.</p>
+        <p class="fadeIn">Potassium helps nerves respond to stimulation and muscles contract, including those in the heart. It also maintains a regular heartbeat and moves nutrients into cells and waste out.</p>
+        <p class="fadeIn">Foods high in Potassium include:</p>
+        <ul class="fadeIn">
+            <li>Bananas</li>
+            <li>Cherries</li>
+            <li>Avocados</li>
+            <li>Potatoes</li>
+            <li>Carrots</li>
+        </ul>
+        <p class="fadeIn">Drinks high in Potassium:</p>
+        <ul class="fadeIn">
+            <li>Orange juice</li>
+            <li>Milk</li>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Carrot juice</li>
+        </ul>
+        <p class="fadeIn">Too much Potassium may cause muscle weakness, irregular heartbeat, difficult breathing, and can lead to heart attack.</p>
+        <p class="example">Example of Potassium: potassium</p>
+
+        <h2 class="slideIn">Calcium</h2>
+        <p class="fadeIn">Calcium is essential for strong bones and teeth, muscle contraction, nerve transmission, and blood clotting. It’s the most abundant mineral in the human body, making up about 1-2% of body weight.</p>
+        <p class="fadeIn">Calcium's main functions include:</p>
+        <ul class="fadeIn">
+            <li>Bone health: Builds and maintains strong bones and teeth</li>
+            <li>Muscle function: Assists in muscle contraction</li>
+            <li>Nerve transmission: Essential for nerve impulse transmission</li>
+            <li>Blood clotting: Necessary for proper clotting processes</li>
+        </ul>
+        <p class="fadeIn">Sources of Calcium:</p>
+        <ul class="fadeIn">
+            <li>Dairy products like milk, cheese, and yogurt</li>
+            <li>Leafy green vegetables like spinach and kale</li>
+            <li>Fortified foods like certain cereals and orange juice</li>
+        </ul>
+        <p class="fadeIn">The daily recommended intake varies by age and gender, but is about 1,000 mg for most adults, increasing to 1,200 mg for women over 50 and men over 70.</p>
+        <p class="fadeIn">Benefits of Calcium include maintaining bone density, supporting muscle function, aiding nerve transmission, and helping with blood clotting.</p>
+        <p class="fadeIn">Foods high in Calcium:</p>
+        <ul class="fadeIn">
+            <li>Dairy products (milk, cheese, yogurt)</li>
+            <li>Leafy greens (kale, spinach)</li>
+            <li>Fortified plant-based milks (soy milk, almond milk)</li>
+            <li>Nuts and seeds (almonds, sesame seeds)</li>
+        </ul>
+        <p class="example">Example of Calcium: calcium</p>
+
+        <h2 class="slideIn">Iron</h2>
+        <p class="fadeIn">Iron is a chemical element with the symbol Fe. It is the most common element on Earth by mass, forming much of Earth's outer and inner core. It plays essential roles in oxygen transport by blood and storage in muscles.</p>
+        <p class="fadeIn">Iron’s main function in the body is to make hemoglobin and myoglobin, proteins that carry oxygen in blood and muscles, respectively.</p>
+        <p class="fadeIn">Iron is also important for growth, development, and cellular respiration. It’s found in various foods, and deficiency can lead to anemia and other health issues.</p>
+        <p class="fadeIn pulse">FUN FACT: Iron was originally made from the fusion of elements in stars and arrived on Earth via meteorites.</p>
+        <p class="fadeIn">Example of Iron: iron</p>
+
+        <h2 class="slideIn">Zinc</h2>
+        <p class="fadeIn">Zinc is a slightly brittle metal with the symbol Zn and atomic number 30. It is essential for many biological functions and is the second most abundant trace metal in humans after iron.</p>
+        <p class="fadeIn">Zinc is important for growth, development, and immune function. It is also an essential nutrient for coral growth and appears in all enzyme classes.</p>
+        <p class="fadeIn">Good sources of Zinc include meat, fish, seafood, nuts, whole grains, breakfast cereals, and dairy products.</p>
+        <p class="fadeIn">Zinc deficiency affects about two billion people and can lead to growth retardation, delayed sexual maturation, and susceptibility to infections.</p>
+        <p class="example">Example of Zinc: zinc</p>
+
+        <h2 class="slideIn">Compounds</h2>
+        <h3 class="slideIn">Water</h3>
+        <p class="fadeIn">Water (H2O) is essential for all known forms of life. It’s transparent, tasteless, odorless, and nearly colorless. It acts as a solvent and regulates body temperature.</p>
+        <p class="fadeIn pulse">FUN FACT: Nearly 97% of the world’s water is salty or locked in ice caps and glaciers. Only 1% is available for all human needs.</p>
+        <p class="example">Example of Water: water</p>
+
+        <h3 class="slideIn">Carbon Dioxide</h3>
+        <p class="fadeIn">Carbon dioxide (CO2) is a colorless, odorless gas critical for the Earth’s carbon cycle and photosynthesis. It also helps regulate blood pH.</p>
+        <p class="fadeIn pulse">FUN FACT: CO2 levels in the atmosphere have been rising due to human activities, contributing to climate change.</p>
+        <p class="example">Example of Carbon Dioxide: carbon dioxide</p>
+
+        <h3 class="slideIn">Sodium Chloride</h3>
+        <p class="fadeIn">Commonly known as edible salt (NaCl), sodium chloride is used as a food preservative and flavor enhancer. It’s also essential for maintaining fluid balance in the body.</p>
+        <p class="fadeIn pulse">FUN FACT: Sodium chloride is regulated by the FDA as a “generally recognized as safe” (GRAS) ingredient.</p>
+        <p class="example">Example of Sodium Chloride: sodium chloride</p>
+
+        <h3 class="slideIn">Citric Acid</h3>
+        <p class="fadeIn">Citric acid is a weak organic acid used as a preservative and flavoring. It was first isolated from lemon juice in 1784 by Carl Wilhelm Scheele.</p>
+        <p class="example">Example of Citric Acid: citric acid</p>
+
+        <h3 class="slideIn">Cholesterol</h3>
+        <p class="fadeIn">Cholesterol (C27H46O) is a waxy substance found in all cells. It’s essential for cell membrane structure and various bodily functions but can be harmful in excess.</p>
+        <p class="fadeIn">Main causes of high cholesterol include eating fatty foods, lack of exercise, being overweight, smoking, and drinking alcohol.</p>
+        <p class="fadeIn">Foods high in cholesterol include fried foods, butter, baked goods, and tropical oils.</p>
+        <p class="example">Example of Cholesterol: cholesterol</p>
+    </div>
+
+
+
+    <a href="#" id="backToTopBtn">Back to Top</a>
+
+    <script>
+        // Show "Back to Top" button when scrolled down
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('backToTopBtn');
+            if (window.scrollY > 300) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - 8 Ecclesiastes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0000ff, #00ff00, #ffff00); /* Blue to green to yellow gradient */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+
+        .main-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .animated-text {
+            font-size: 3em;
+            font-weight: bold;
+            color: #000; /* Black text color */
+            background-color: #fff; /* White background to highlight */
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid #00ff99;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            animation: bounce 2s infinite, glow 1.5s infinite, rotate 10s infinite linear;
+            transition: transform 0.3s, color 0.3s, border-color 0.3s;
+            margin-bottom: 20px; /* Space between heading and button */
+        }
+
+        /* Bounce Animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Glowing Effect Animation */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+            }
+        }
+
+        /* 3D Rotate Animation */
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Pulse Effect on Hover */
+        .animated-text:hover {
+            color: #00ff99;
+            border-color: #ff99cc;
+            animation: bounce 2s infinite, glow 1.5s infinite, rotate 10s infinite linear, pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .start-button {
+            display: inline-block;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            background: #00ff99;
+            text-decoration: none;
+            padding: 15px 30px;
+            border: 2px solid #00ff99;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .start-button:hover {
+            background-color: #0072ff;
+            border-color: #0072ff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h2 class="animated-text">Test Your Knowledge</h2>
+        <a href="https://forms.gle/1j3VLX8rmbzvzXs79" class="start-button">Click here to start the quiz</a>
+    </div>
+	<div class"main-container">
+	<style="font-family:arial;">
+	<nav>
+        <ul>
+            <li><a href="homepage-1.html">Home Page</a></li>
+            <li><a href="essential-1.html">Essential Elements and Compounds</a></li>
+            <li><a href="watercycle.html">Water Cycle</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="reference-2.html">References</a></li>
+            <li><a href="feedback.html">Feedback Page</a></li>
+        </ul>
+    </nav>
+	</div> </style>
+</body>
+</html>

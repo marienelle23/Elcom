@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - 8 Ecclesiastes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #00c6ff, #00ff99, #ffff00); /* Blue to Green to Yellow gradient */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: scroll; /* Ensure scrolling is enabled */
+        }
+        header {
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Blue gradient */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 2s;
+            border-bottom: 4px solid #00ff99; /* Neon green border at bottom */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #00ff99;
+            animation: bounceIn 1.5s ease-out;
+        }
+        nav {
+            background: #111;
+            padding: 10px;
+            animation: fadeIn 2s 1s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #00ff99;
+            text-decoration: none;
+            font-size: 1.1em;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s, transform 0.3s;
+            animation: bounceIn 2s;
+        }
+        nav ul li a::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: #00ff99;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+        nav ul li a:hover {
+            color: #ff66b2;
+            transform: scale(1.2);
+            animation: bounce 0.5s ease-out;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: 60px; /* Ensure space for the footer */
+            animation: fadeIn 2s 2s;
+            background: rgba(0, 0, 0, 0.5); /* Slightly darkened background for better contrast */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2, h3 {
+            color: #00ff99;
+            text-shadow: 0 0 5px #00ff99;
+            animation: bounceIn 1.5s ease-out;
+        }
+        p {
+            line-height: 1.6;
+            animation: fadeIn 2s 0.5s;
+        }
+        a {
+            color: #ff99cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff66b2;
+        }
+        footer {
+            background: #111;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        footer .scrolling-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 10s linear infinite;
+            color: #00ff99; /* Neon green text color */
+            background-color: #000000; /* Black background for contrast */
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 2px solid #00ff99; /* Neon green border */
+        }
+        #backToTopBtn {
+            display: block;
+            background: #00c6ff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 60px; /* Adjusted to not overlap the footer */
+            right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            animation: bounceIn 2s;
+        }
+        #backToTopBtn.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #backToTopBtn:hover {
+            background: #0072ff;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes bounce {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elcom</h1>
+        <p>A website where you can learn about the elements and compounds found in our body.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage-1.html">Home Page</a></li>
+            <li><a href="essential-1.html">Essential Elements and Compounds</a></li>
+            <li><a href="watercycle.html">Water Cycle</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="reference-2.html">References</a></li>
+            <li><a href="feedback.html">Feedback Page</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to Elcom!</h2>
+        <p>Welcome to our website, where we delve into the fascinating world of the elements and compounds essential to the human body. Discover the vital roles played by elements such as Zinc, Phosphorus, Potassium, Iron, and Calcium, as well as compounds like Carbon Dioxide, Cholesterol, Citric Acid, Water, and Sodium Chloride.</p>
+        <p>Explore how these elements and compounds function within our bodies, their various effects, and how we can obtain them through our diet and lifestyle. Learn about their importance, their sources, and their impact on our health.</p>
+        <p>Dive into our website created for understanding the chemistry of life and how these fundamental substances keep us healthy and functioning!</p>
+
+        <h3>What is the purpose of this website?</h3>
+        <p>This website is for educational purposes only. It is where you can see, learn, and know more about the elements and compounds that you will find in your body. It is also designed to expose students or people of any age to be more aware of their body.</p>
+        <p>You can expect to leave our website with lots of new knowledge, such as learning how important these elements and compounds truly are and how they can make changes in our body. You can expect to learn how to take care of your body more and how we can avoid or stop doing things that are not good for our health. Moreover, we can also stop ourselves from eating unhealthy foods and avoid adding seasonings/condiments to our food that are not suitable for our body when cooking.</p>
+
+        <h3>About Us</h3>
+        <p>We are a group of students assigned to create and design a website that can help other people learn more about elements and compounds. In this assignment, we have chosen to help people become more aware of what the elements and compounds are that we need in order to be strong and to have a healthy lifestyle.</p>
+        <ul>
+            <li>Allera, Marienelle - <a href="mailto:marienelleallera31@gmail.com">marienelleallera31@gmail.com</a></li>
+            <li>David, Reese Ashley - <a href="mailto:ashleydavid1124@gmail.com">ashleydavid1124@gmail.com</a></li>
+            <li>Gacutan, Gianne Chantelle - <a href="mailto:giannechantellegacutan@gmail.com">giannechantellegacutan@gmail.com</a></li>
+            <li>Santos, Nikolai Olivia - <a href="mailto:nikolaiolivia4611@gmail.com">nikolaiolivia4611@gmail.com</a></li>
+            <li>Villavicencio, Istana Jamila - <a href="mailto:villavicenciojamila@gmail.com">villavicenciojamila@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="scrolling-text">For Educational Purposes Only.</div>
+        <p><a href="#" id="backToTopBtn">Back to the Top</a></p>
+    </footer>
+
+    <script>
+        // Back to top button functionality
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

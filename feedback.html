@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 - 8 Ecclesiastes</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, blue, green, yellow); /* Blue to green to yellow gradient */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #00e5ff; /* Neon sky blue background color */
+            color: white;
+            animation: glow 2s infinite alternate; /* Adding glow animation */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: pulse 2s infinite alternate; /* Adding pulse animation to header text */
+        }
+
+        nav {
+            background-color: #00e5ff; /* Neon sky blue background color */
+            padding: 10px;
+            text-align: center;
+            animation: glow 2s infinite alternate; /* Adding glow animation */
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            animation: bounce 1s infinite alternate; /* Adding bounce animation to nav links */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .feedback-form {
+            background-color: #a7f1ff; /* Light neon sky blue background color */
+            padding: 20px;
+            border-radius: 8px;
+            animation: fadeIn 2s ease-in; /* Adding fade-in animation */
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            animation: slideInLeft 1s ease-in-out; /* Slide-in animation for labels */
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #00e5ff; /* Neon sky blue border color */
+            border-radius: 4px;
+        }
+
+        .feedback-form input[type="submit"] {
+            background-color: #00e5ff; /* Neon sky blue background color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+            animation: pulse 1.5s infinite alternate; /* Pulse animation for the submit button */
+        }
+
+        .feedback-form input[type="submit"]:hover {
+            background-color: #00b3cc; /* Slightly darker neon blue on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00e5ff; /* Neon sky blue background color */
+            color: white;
+            margin-top: 20px;
+            animation: glow 2s infinite alternate; /* Adding glow animation */
+        }
+
+        footer a {
+            color: #a7f1ff; /* Light neon sky blue link color */
+            text-decoration: none;
+            font-weight: bold; /* Bold text */
+            background-color: #ffffff; /* White background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            animation: bounce 1.5s infinite alternate; /* Adding bounce animation */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            background-color: #e0ffff; /* Lighter blue on hover */
+        }
+
+        marquee {
+            font-size: 1.2em;
+            color: #00b3cc; /* Darker neon sky blue text color */
+            font-weight: bold; /* Bold text */
+            background-color: #ffffff; /* White background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            animation: glow 2s infinite alternate; /* Adding glow animation */
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+            }
+            to {
+                box-shadow: 0 0 20px #00b3cc, 0 0 30px #00b3cc, 0 0 40px #00b3cc;
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const name = document.forms["feedbackForm"]["name"].value;
+            const message = document.forms["feedbackForm"]["message"].value;
+
+            if (name === "" || message === "") {
+                alert("Name and message fields cannot be empty.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Feedback Page</h1>
+    </header>
+
+    <nav>
+        <a href="homepage-1.html">Home Page</a>
+        <a href="essential-1.html">Essential Elements and Compounds</a>
+        <a href="watercycle.html">Water Cycle</a>
+        <a href="quiz.html">Quizzes</a>
+        <a href="reference-2.html">References</a>
+        <a href="feedback.html">Feedback Page</a>
+    </nav>
+
+    <div class="container">
+        <div class="feedback-form">
+            <form name="feedbackForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <marquee>For Educational Purposes Only.</marquee>
+        <p><a href="#Top">Back to the Top</a></p>
+    </footer>
+</body>
+
+</html>
